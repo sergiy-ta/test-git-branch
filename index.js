@@ -16,5 +16,9 @@ app.get('/sergiy-ta', (req, res) => {
     res.send('<h1 style="color:red;">Hello from my page</h1> \n');
 });
 
+app.get('/more', (req, res) => {
+    res.send('<h1 style="color:red;">Hello from more page</h1> \n');
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
