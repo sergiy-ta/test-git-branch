@@ -12,5 +12,9 @@ app.get('/', (req, res) => {
     res.send('<h1 style="color:green;">Hello from test git branch sergiy-ta</h1> \n');
 });
 
+app.get('/sergiy-ta', (req, res) => {
+    res.send('<h1 style="color:red;">Hello from my page</h1> \n');
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
